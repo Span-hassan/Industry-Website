@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.topinfo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333232;
+
+}
+
+.icons{
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+
+.social{
+    margin-top: 5%;
+    width: 17%;
+    height: 30px;
+    margin-left: 5%;
+    
+}
+
+.social:hover{
+    border-radius: 55%;
+    background-color: #d9b85f;
+}
+
+
+
+
+.info{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    padding-top:15px ;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+                                    /* <!-- NAVBAR --> */
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15%;
+    margin-left: 5%;
+    height: 55%;
+    margin-top: 20px;
+}
+
+.lugo{
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav{
+    width: 55%;
+    height:40%;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:#333232;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+
+.blog-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 15px;
+    display: none;
+    height: 100px;
+    width: 100px;
+}
+
+.blog:hover .blog-menu{
+    display: block;
+    border: none;
+}
+
+.blog-menu:hover a{
+    color: #d9b85f;
+}
+
+                                    /* <!-- HERO SECTION --> */
+
+.hero-section{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/header-bg.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-size: cover;
+}
+
+
+.text1{
+    width: 55%;
+    height: 30px;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.heading{
+    width: 55%;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.text2{
+    width: 55%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn{
+    width: 10%;
+    margin-top: 25px;
+    height: 42px;
+    text-align: center;
+}
+
+Button{
+background-color: #e0942f;
+padding: 15px;
+color: white;
+border: none;
+
+}
+
+.btn:hover button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.sector{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.men{
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.magic{
+    width: 41%;
+    margin-top: 30px;
+    margin-left: 80px;
+    height: 60px;
+}
+
+.magic:hover{
+    background-color: #e0942f;
+    border-radius: 10px;
+}
+
+
+.man{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrte{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.resi{
+    width: 20%;
+    height: 65%;
+
+}
+
+.com{
+    width: 20%;
+    height: 65%;
+
+}
+
+.formarea{
+    width: 100%;
+    height: 90vh;
+    background-color:#e3e5e8;
+    display: flex;
+}
+
+.leftside{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-left: 11%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Brand{
+    margin-top: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e0942f;
+}
+
+.change{
+    margin-top: -30px;
+    font-size: 40px;
+    color: #333232;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.listen{
+    margin-top: -4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333232;
+}
+
+.loram{
+     line-height: 22px;
+     font-size: 17px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     text-align: start;
+     color: #333232;
+}
+
+.rightside{
+      width: 25%;
+    height: 70%;
+    margin: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/form-bg.jpg);
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.botn{
+    width: 30%;
+    height: 48px;
+}
+
+.get{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.get:hover{
+    background-color: transparent;
+    border: 1px solid #333232;
+}
+
+.get:hover a{
+    color: #333232;
+}
+
+.get a{
+    color: white;
+    font-size: 16px;
+}
+
+.Quot{
+    width: 40%;
+    height: 18px;
+    margin-top: 5px;
+    color :white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+form select{
+    height: 40px;
+    margin-left: 10%;
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+option{
+    color: #333232;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    padding-left: 15px;
+    margin-left: 10%;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+textarea::placeholder{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+textarea{
+     margin-top: 10px;
+    width: 80%;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-left: 10%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+input::placeholder{
+    color: white;
+}
+.free{
+    margin-left: 27%;
+    margin-top: 5px;
+}
+
+.free a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+.free:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.free:hover a{
+    color: white; 
+}
+
+.market{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+}
+
+.ket{
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.who{
+    width: 40%;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    color: gray;
+}
+
+.threepole{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.engsection {
+    width: 82%;
+    margin: 32px auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.card {
+    width: 33%;
+}
+
+
+
+.image-box {
+    width: 100%;
+    height: 244px;
+
+    overflow: hidden;
+}
+
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+}
+
+
+.card:hover img{
+    transform: scale(1.15) rotate(-4deg) translateX(-15px);
+}
+
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.card h2.active {
+    color: #333232;
+}
+
+
+
+
+.card p {
+    font-size: 15px;
+    line-height: 23px;
+    color: #999;
+}
+
+.fourpole{
+    width: 100%;
+    height: 50vh;
+ background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/fact.jpg);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+gap: 20px;
+ background-size: cover;
+}
+
+.onea{
+    width: 15%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+
+.gol{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    border-radius: 50%; 
+    justify-content: center;
+    border: 1px solid yellow;
+}
+
+.circle{
+   background-color: yellow;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   height: 50%;
+}
+
+.pro{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.oneb{
+width: 15%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+.onec{
+width: 15%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+.oned{
+width: 15%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+                                    <!-- TOPINFO -->
+<div class="topinfo">
+    <div class="icons">
+
+        <a href="#"><img class="social" src="icons/facebook-f-brands-solid-full.svg" alt="facebook"></a>
+        <a href="#"><img class="social" src="icons/twitter-brands-solid-full.svg" alt="tweeter"></a>
+        <a href="#"><img class="social" src="icons/screwdriver-wrench-solid-full.svg" alt="screw"></a>
+        <a href="#"><img class="social" src="icons/user-graduate-solid-full.svg" alt="graduation"></a>
+    </div>
+    <div class="info">+880 012 3654 896 &nbsp;&nbsp; support@colorlib.com</div>
+</div>
+
+
+                                    <!-- NAVBAR -->
+
+<div class="navbar">
+    <div class="logo"><img class="lugo" src="images/logo.png" alt="Logo"></div>
+     <ul class="nav">
+
+        <li><a href="#">HOME</a></li>
+
+        <li><a href="#">ABOUT</a></li>
+
+        <li><a href="#">SERVICE</a></li>
+
+        <li><a href="#">PROJECTS</a></li>
+
+        <li class="blog">
+            <a href="#">BLOG ⌄</a>
+
+            <ul class="blog-menu">
+                <li><a href="#">Blog Home</a></li>
+                <li><a href="#">Blog Single</a></li>
+            </ul>
+
+            <li><a href="#">CONTECT</a></li>
+
+        <li><a href="#">ELEMENTS</a></li>
+
+
+
+</div> 
+
+                                   <!-- /* HERO SECTION */ -->
+
+
+
+<div class="hero-section">
+
+<div class="text1"><span>
+Don’t look further, here is the key</span>
+</div>
+
+<div class="heading"><span>We’re Industrial solution</span></div>
+
+<div class="text2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt.</span>
+</div>
+
+<div class="btn"><a href="#"><button>GET STARTED</button></a></div>
+
+
+
+</div>
+
+<div class="sector">
+    <div class="men"><img class="magic" src="icons/wand-magic-sparkles-solid-full.svg" alt="icon">
+        <span class="man">Maintenance</span>
+        <span class="wrte">inappropriate behavior is often laughed off as “boys will be boys,” 
+            women face higher conduct standards especially in the workplace. That’s why.</span>
+        </div>
+    <div class="resi"><img class="magic" src="icons/rocket-solid-full.svg" alt="icon">
+        <span class="man">Residental Service</span>
+        <span class="wrte">inappropriate behavior is often laughed off as “boys will be boys,” 
+            women face higher conduct standards especially in the workplace. That’s why.</span></div>
+    <div class="com"><img class="magic" src="icons/bug-solid-full.svg" alt="icon">
+        <span class="man">Commercial Services</span>
+        <span class="wrte">inappropriate behavior is often laughed off as “boys will be boys,” 
+            women face higher conduct standards especially in the workplace. That’s why.</span></div>
+</div>
+
+                                    <!-- FORM AREA --> 
+
+
+
+<div class="formarea">
+    <div class="leftside"><span class="Brand">Brand new app to blow your mind</span>
+    <span class="change">We’ve made a life
+<br> that will change you</span>
+<span class="listen">We are here to listen from you deliver exellence</span>
+<span class="loram">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit, sed do eiusmod temp or incididunt ut labore
+       et dolore magna aliqua.Ut enim ad minim.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna
+       aliqua. Ut enim ad minim.</span>
+    <div class="botn"><button class="get"><a href="">GET START NOW</button></a></div>
+    </div>
+    <div class="rightside"><span class="Quot">Request a Quot</span>
+    <form>
+        <select name="city id="city">
+        <option value="">Select Services &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        <option value="Serviceone">Service one</option>
+        <option value="Servicetwo">Service two</option>
+        <option value="Servicethree">Service three</option>
+        <option value="Servicefour">Service four</option>    
+    </select>
+    <input type="text" name="name" placeholder="Name">
+    <input type="number" name="number" placeholder="Phone Number">
+    <input type="email" name="email" placeholder="Email Address">
+    <textarea name="feedback" id="" placeholder="Massege" rows="5" cols="30"></textarea>
+    <button class="free"><a href="##">Request Free Quote</a></button>
+
+
+
+</form></div>
+</div>
+
+<div class="market">
+    <div class="ket">Our Capturing Market Sectors</div>
+    <div class="who">Who are in extremely love with eco friendly system..</div>
+</div>
+
+
+<div class="threepole">
+
+    <section class="engsection">
+    <div class="card">
+
+        <div class="image-box">
+            <img src="images/s1.jpg" alt="jhfkv">
+        </div>
+
+        <a href=""><h2 class="active">Construction & Engineering</h2></a>
+
+        <p>
+            inappropriate behavior is often laughed off as
+            “boys will be boys,” women face higher conduct
+            women face higher conduct.
+        </p>
+
+    </div>
+
+<div class="card">
+
+        <div class="image-box">
+            <img src="images/s2.jpg" alt="jhfkv">
+        </div>
+
+       <a href="#"><h2 class="active">Industrial Engineering</h2></a>
+
+        <p>
+            inappropriate behavior is often laughed off as
+            “boys will be boys,” women face higher conduct
+            women face higher conduct.
+        </p>
+
+    </div>
+
+<div class="card">
+
+        <div class="image-box">
+            <img src="images/s3.jpg" alt="jhfkv">
+        </div>
+
+        <a href=""><h2 class="active">Automotive Engineering</h2></a>
+
+        <p>
+            inappropriate behavior is often laughed off as
+            “boys will be boys,” women face higher conduct
+            women face higher conduct.
+        </p>
+
+    </div>
+
+ 
+</section>
+
+
+</div>
+
+
+<div class="fourpole">
+<div class="onea"><div class="gol"><span class="circle">2K+</span>
+    </div><span class="pro">Project Complete</span></div>
+<div class="oneb"><div class="gol"><span class="circle">5.5K+</span>
+    </div><span class="pro">Total Employees</span></div>
+<div class="onec"><div class="gol"><span class="circle">959</span>
+    </div><span class="pro">Happy Clients</span></div>
+<div class="oned"><div class="gol"><span class="circle">365</span>
+    </div><span class="pro">Tickets Submited</span></div>
+</div>
+
+
+
+
+</body>
+</html>
